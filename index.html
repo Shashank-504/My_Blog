@@ -13,7 +13,7 @@
             background-attachment: fixed;
             color: #ffffff;
         }
-        header, nav, main {
+        header, nav, main, footer {
             background-color: rgba(0, 0, 0, 0.7);
             padding: 20px;
             border-radius: 15px;
@@ -81,33 +81,65 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
-                        <li class="nav-item"><a class="nav-link" href="#profile">Profile</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#languages">Languages</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#home" onclick="showSection('home')">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about" onclick="showSection('about')">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#education" onclick="showSection('education')">Education & Certifications</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills" onclick="showSection('skills')">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects" onclick="showSection('projects')">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact" onclick="showSection('contact')">Contact Me</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <main>
-            <section id="profile">
-                <h2>Profile</h2>
-                <p>As a driven Computer Science Engineering student in my second year of study, I possess a keen interest and passion for web development. Through hands-on learning and exploration, I am honing my skills in various web development technologies and frameworks. Eager to delve deeper into creating dynamic and user-friendly websites, I am actively seeking opportunities to expand my knowledge and expertise in this field. With a strong foundation in computer science principles and a fervent dedication to mastering web development, I am poised to contribute effectively to innovative projects and initiatives in the digital realm.</p>
+            <section id="home">
+                <h2>Welcome</h2>
+                <p>Hello! I am Shashank. Welcome to my personal blog where I share my journey in web development and more.</p>
             </section>
 
-            <section id="education">
+            <section id="about" class="d-none">
+                <h2>About Me</h2>
+                <section id="profile">
+                    <h3>Profile</h3>
+                    <p>As a driven Computer Science Engineering student in my second year of study, I possess a keen interest and passion for web development...</p>
+                </section>
+
+                <section id="languages">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li><strong>Telugu</strong> [Native]</li>
+                        <li><strong>English</strong> [Intermediate]</li>
+                        <li><strong>Hindi</strong> [Intermediate]</li>
+                    </ul>
+                </section>
+
+                <section id="hobbies">
+                    <h3>Hobbies</h3>
+                    <ul>
+                        <li>Watching movies</li>
+                        <li>Learning new facts</li>
+                        <li>Following the latest news updates</li>
+                    </ul>
+                </section>
+            </section>
+
+            <section id="education" class="d-none">
                 <h2>Education</h2>
                 <ul>
                     <li>2022--2026: KL University, Bachelor of Technology in Computer Science, Hyderabad, Telangana (CGPA: 9.26)</li>
                     <li>2020--2022: Narayana Junior College, Intermediate (MPC), Hyderabad, Telangana (Marks: 956 out of 1000)</li>
                     <li>2016--2020: Montessori Residential High School, High School, Alampur, Telangana (CGPA: 10)</li>
                 </ul>
+                <h2>Certifications</h2>
+                <ul>
+                    <li>AWS Certified Cloud Practitioner Badge: <a href="https://www.credly.com/go/eX5756G5">Link</a></li>
+                    <li>MongoDB Developer Path Certificate - Certification ID: <a href="https://learn.mongodb.com/c/Aw6Jt0xjS0C7dRxdhqXV_g">MDBd9r7szl8kj</a></li>
+                    <li>Participation Certificate for Hackathon - Certification ID: ImpacTech03514</li>
+                    <li>Postman API Fundamentals Student Expert Badge: <a href="https://badgr.com/public/assertions/wBWp7EP_SBa1KSVAlCzJYw?identity__email=shashankvenkat06@gmail.com">Link</a></li>
+                </ul>
             </section>
 
-            <section id="skills">
+            <section id="skills" class="d-none">
                 <h2>Skills</h2>
                 <div class="row">
                     <div class="col-md-4">
@@ -231,7 +263,7 @@
                 </div>
             </section>
 
-            <section id="projects">
+            <section id="projects" class="d-none">
                 <h2>Projects</h2>
                 <div class="card mb-3">
                     <div class="card-body">
@@ -263,37 +295,24 @@
                 </div>
             </section>
 
-            <section id="certifications">
-                <h2>Online Courses & Certifications</h2>
-                <ul>
-                    <li>AWS Certified Cloud Practitioner Badge: <a href="https://www.credly.com/go/eX5756G5">Link</a></li>
-                    <li>MongoDB Developer Path Certificate - Certification ID: <a href="https://learn.mongodb.com/c/Aw6Jt0xjS0C7dRxdhqXV_g">MDBd9r7szl8kj</a></li>
-                    <li>Participation Certificate for Hackathon - Certification ID: ImpacTech03514</li>
-                    <li>Postman API Fundamentals Student Expert Badge: <a href="https://badgr.com/public/assertions/wBWp7EP_SBa1KSVAlCzJYw?identity__email=shashankvenkat06@gmail.com">Link</a></li>
-                </ul>
-            </section>
-
-            <section id="languages">
-                <h2>Languages</h2>
-                <ul>
-                    <li><strong>Telugu</strong> [Native]</li>
-                    <li><strong>English</strong> [Intermediate]</li>
-                    <li><strong>Hindi</strong> [Intermediate]</li>
-                </ul>
-            </section>
-
-            <section id="hobbies">
-                <h2>Hobbies</h2>
-                <ul>
-                    <li>Watching movies</li>
-                    <li>Learning new facts</li>
-                    <li>Following the latest news updates</li>
-                </ul>
+            <section id="contact" class="d-none">
+                <h2>Contact Me</h2>
+                <p>Email: shashankvenkat06@gmail.com</p>
+                <p>Phone: +91-123-456-7890</p>
             </section>
         </main>
     </div>
 
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('main section');
+            sections.forEach(section => {
+                section.classList.add('d-none');
+            });
+            document.getElementById(sectionId).classList.remove('d-none');
+        }
+    </script>
 </body>
 </html>
