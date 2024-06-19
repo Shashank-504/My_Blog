@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shashank's Blog</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMqTG2G5o1A6JT69lYZF8UOpPiSHJeb7aBqd3Gm" crossorigin="anonymous">
     <style>
         body {
             background-image: url('background.jpg');
@@ -13,28 +13,32 @@
             background-attachment: fixed;
             color: #ffffff;
         }
-        header, nav, main, footer {
-            background-color: rgba(0, 0, 0, 0.7);
+        header, nav, main {
+            background-color: rgba(0, 0, 0, 0.8);
             padding: 20px;
             border-radius: 15px;
             margin-bottom: 20px;
         }
         h1, h2 {
-            color: #ffdd57;
+            color: #FFD700;
         }
         .nav-link {
             color: #ffffff !important;
         }
         .nav-link:hover {
-            color: #ffdd57 !important;
+            color: #FFD700 !important;
         }
         a {
-            color: #ffdd57;
+            color: #FFD700;
         }
         .card {
             background-color: rgba(255, 255, 255, 0.1);
             border: none;
             color: #ffffff;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
         }
         .card-body {
             background-color: rgba(0, 0, 0, 0.5);
@@ -42,14 +46,14 @@
             padding: 15px;
         }
         .card-title {
-            color: #ffdd57;
+            color: #FFD700;
         }
         .progress-bar {
-            background-color: #ffdd57;
+            background-color: #FFD700;
         }
         .social-links a {
             margin-right: 10px;
-            color: #ffdd57;
+            color: #FFD700;
             font-size: 24px;
         }
         .skills-card {
@@ -61,6 +65,18 @@
             width: 40px;
             height: 40px;
             margin-right: 15px;
+        }
+        .profile-pic {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .section-title {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .section-content {
+            margin-bottom: 40px;
         }
     </style>
 </head>
@@ -81,182 +97,184 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
-                        <li class="nav-item"><a class="nav-link" href="#home" onclick="showSection('home')">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about" onclick="showSection('about')">About Me</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#education" onclick="showSection('education')">Education & Certifications</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#skills" onclick="showSection('skills')">Skills</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects" onclick="showSection('projects')">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact" onclick="showSection('contact')">Contact Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#education">Education & Certifications</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <main>
             <section id="home">
-                <h2>Welcome</h2>
-                <p>Hello! I am Shashank. Welcome to my personal blog where I share my journey in web development and more.</p>
+                <h2 class="section-title">Welcome</h2>
+                <div class="text-center section-content">
+                    <h3>I am Shashank</h3>
+                    <p>Welcome to my personal blog where I share my journey and projects in web development and computer science.</p>
+                </div>
             </section>
 
             <section id="about" class="d-none">
-                <h2>About Me</h2>
-                <section id="profile">
-                    <h3>Profile</h3>
-                    <p>As a driven Computer Science Engineering student in my second year of study, I possess a keen interest and passion for web development...</p>
-                </section>
-
-                <section id="languages">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-content text-center">
+                    <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+                    <p>As a driven Computer Science Engineering student in my second year of study, I possess a keen interest and passion for web development. Through hands-on learning and exploration, I am honing my skills in various web development technologies and frameworks. Eager to delve deeper into creating dynamic and user-friendly websites, I am actively seeking opportunities to expand my knowledge and expertise in this field. With a strong foundation in computer science principles and a fervent dedication to mastering web development, I am poised to contribute effectively to innovative projects and initiatives in the digital realm.</p>
                     <h3>Languages</h3>
                     <ul>
                         <li><strong>Telugu</strong> [Native]</li>
                         <li><strong>English</strong> [Intermediate]</li>
                         <li><strong>Hindi</strong> [Intermediate]</li>
                     </ul>
-                </section>
-
-                <section id="hobbies">
                     <h3>Hobbies</h3>
                     <ul>
                         <li>Watching movies</li>
                         <li>Learning new facts</li>
                         <li>Following the latest news updates</li>
                     </ul>
-                </section>
+                </div>
             </section>
 
             <section id="education" class="d-none">
-                <h2>Education</h2>
-                <ul>
-                    <li>2022--2026: KL University, Bachelor of Technology in Computer Science, Hyderabad, Telangana (CGPA: 9.26)</li>
-                    <li>2020--2022: Narayana Junior College, Intermediate (MPC), Hyderabad, Telangana (Marks: 956 out of 1000)</li>
-                    <li>2016--2020: Montessori Residential High School, High School, Alampur, Telangana (CGPA: 10)</li>
-                </ul>
-                <h2>Certifications</h2>
-                <ul>
-                    <li>AWS Certified Cloud Practitioner Badge: <a href="https://www.credly.com/go/eX5756G5">Link</a></li>
-                    <li>MongoDB Developer Path Certificate - Certification ID: <a href="https://learn.mongodb.com/c/Aw6Jt0xjS0C7dRxdhqXV_g">MDBd9r7szl8kj</a></li>
-                    <li>Participation Certificate for Hackathon - Certification ID: ImpacTech03514</li>
-                    <li>Postman API Fundamentals Student Expert Badge: <a href="https://badgr.com/public/assertions/wBWp7EP_SBa1KSVAlCzJYw?identity__email=shashankvenkat06@gmail.com">Link</a></li>
-                </ul>
+                <h2 class="section-title">Education & Certifications</h2>
+                <div class="section-content">
+                    <h3>Education</h3>
+                    <ul>
+                        <li>2022--2026: KL University, Bachelor of Technology in Computer Science, Hyderabad, Telangana (CGPA: 9.26)</li>
+                        <li>2020--2022: Narayana Junior College, Intermediate (MPC), Hyderabad, Telangana (Marks: 956 out of 1000)</li>
+                        <li>2016--2020: Montessori Residential High School, High School, Alampur, Telangana (CGPA: 10)</li>
+                    </ul>
+                    <h3>Certifications</h3>
+                    <ul>
+                        <li>AWS Certified Cloud Practitioner Badge: <a href="https://www.credly.com/go/eX5756G5">Link</a></li>
+                        <li>MongoDB Developer Path Certificate - Certification ID: <a href="https://learn.mongodb.com/c/Aw6Jt0xjS0C7dRxdhqXV_g">MDBd9r7szl8kj</a></li>
+                        <li>Participation Certificate for Hackathon - Certification ID: ImpacTech03514</li>
+                        <li>Postman API Fundamentals Student Expert Badge: <a href="https://badgr.com/public/assertions/wBWp7EP_SBa1KSVAlCzJYw?identity__email=shashankvenkat06@gmail.com">Link</a></li>
+                    </ul>
+                </div>
             </section>
 
             <section id="skills" class="d-none">
-                <h2>Skills</h2>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card skills-card">
-                            <img src="java-logo.png" alt="Java">
-                            <div class="card-body">
-                                <h5 class="card-title">Java</h5>
-                                <p class="card-text">Intermediate</p>
+                <h2 class="section-title">Skills</h2>
+                <div class="section-content">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card skills-card">
+                                <img src="java-logo.png" alt="Java">
+                                <div class="card-body">
+                                    <h5 class="card-title">Java</h5>
+                                    <p class="card-text">Intermediate</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card skills-card">
-                            <img src="c-logo.png" alt="C">
-                            <div class="card-body">
-                                <h5 class="card-title">C</h5>
-                                <p class="card-text">Intermediate</p>
+                        <div class="col-md-4">
+                            <div class="card skills-card">
+                                <img src="c-logo.png" alt="C">
+                                <div class="card-body">
+                                    <h5 class="card-title">C</h5>
+                                    <p class="card-text">Intermediate</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card skills-card">
-                            <img src="python-logo.png" alt="Python">
-                            <div class="card-body">
-                                <h5 class="card-title">Python</h5>
-                                <p class="card-text">Intermediate</p>
+                        <div class="col-md-4">
+                            <div class="card skills-card">
+                                <img src="python-logo.png" alt="Python">
+                                <div class="card-body">
+                                    <h5 class="card-title">Python</h5>
+                                    <p class="card-text">Intermediate</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card skills-card">
-                            <img src="html-logo.png" alt="HTML">
-                            <div class="card-body">
-                                <h5 class="card-title">HTML</h5>
-                                <p class="card-text">Intermediate</p>
+                        <div class="col-md-4">
+                            <div class="card skills-card">
+                                <img src="html-logo.png" alt="HTML">
+                                <div class="card-body">
+                                    <h5 class="card-title">HTML</h5>
+                                    <p class="card-text">Intermediate</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card skills-card">
-                            <img src="css-logo.png" alt="CSS">
-                            <div class="card-body">
-                                <h5 class="card-title">CSS</h5>
-                                <p class="card-text">Intermediate</p>
+                        <div class="col-md-4">
+                            <div class="card skills-card">
+                                <img src="css-logo.png" alt="CSS">
+                                <div class="card-body">
+                                    <h5 class="card-title">CSS</h5>
+                                    <p class="card-text">Intermediate</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card skills-card">
-                            <img src="javascript-logo.png" alt="JavaScript">
-                            <div class="card-body">
-                                <h5 class="card-title">JavaScript</h5>
-                                <p class="card-text">Intermediate</p>
+                        <div class="col-md-4">
+                            <div class="card skills-card">
+                                <img src="javascript-logo.png" alt="JavaScript">
+                                <div class="card-body">
+                                    <h5 class="card-title">JavaScript</h5>
+                                    <p class="card-text">Intermediate</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card skills-card">
-                            <img src="django-logo.png" alt="Django">
-                            <div class="card-body">
-                                <h5 class="card-title">Django</h5>
+                        <div class="col-md-4">
+                            <div class="card skills-card">
+                                <img src="django-logo.png" alt="Django">
+                                <div class="card-body">
+                                    <h5 class="card-title">Django</h5>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card skills-card">
-                            <img src="flask-logo.png" alt="Flask">
-                            <div class="card-body">
-                                <h5 class="card-title">Flask</h5>
+                        <div class="col-md-4">
+                            <div class="card skills-card">
+                                <img src="flask-logo.png" alt="Flask">
+                                <div class="card-body">
+                                    <h5 class="card-title">Flask</h5>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card skills-card">
-                            <img src="react-logo.png" alt="React.js">
-                            <div class="card-body">
-                                <h5 class="card-title">React.js</h5>
+                        <div class="col-md-4">
+                            <div class="card skills-card">
+                                <img src="react-logo.png" alt="React.js">
+                                <div class="card-body">
+                                    <h5 class="card-title">React.js</h5>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card skills-card">
-                            <img src="nodejs-logo.png" alt="Node.js">
-                            <div class="card-body">
-                                <h5 class="card-title">Node.js</h5>
+                        <div class="col-md-4">
+                            <div class="card skills-card">
+                                <img src="nodejs-logo.png" alt="Node.js">
+                                <div class="card-body">
+                                    <h5 class="card-title">Node.js</h5>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card skills-card">
-                            <img src="express-logo.png" alt="Express.js">
-                            <div class="card-body">
-                                <h5 class="card-title">Express.js</h5>
+                        <div class="col-md-4">
+                            <div class="card skills-card">
+                                <img src="express-logo.png" alt="Express.js">
+                                <div class="card-body">
+                                    <h5 class="card-title">Express.js</h5>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card skills-card">
-                            <img src="mysql-logo.png" alt="MySQL">
-                            <div class="card-body">
-                                <h5 class="card-title">MySQL</h5>
+                        <div class="col-md-4">
+                            <div class="card skills-card">
+                                <img src="mysql-logo.png" alt="MySQL">
+                                <div class="card-body">
+                                    <h5 class="card-title">MySQL</h5>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card skills-card">
-                            <img src="postgresql-logo.png" alt="PostgreSQL">
-                            <div class="card-body">
-                                <h5 class="card-title">PostgreSQL</h5>
+                        <div class="col-md-4">
+                            <div class="card skills-card">
+                                <img src="postgresql-logo.png" alt="PostgreSQL">
+                                <div class="card-body">
+                                    <h5 class="card-title">PostgreSQL</h5>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card skills-card">
-                            <img src="mongodb-logo.png" alt="MongoDB">
-                            <div class="card-body">
-                                <h5 class="card-title">MongoDB</h5>
+                        <div class="col-md-4">
+                            <div class="card skills-card">
+                                <img src="mongodb-logo.png" alt="MongoDB">
+                                <div class="card-body">
+                                    <h5 class="card-title">MongoDB</h5>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -264,55 +282,48 @@
             </section>
 
             <section id="projects" class="d-none">
-                <h2>Projects</h2>
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">CGPA Calculator</h5>
-                        <p class="card-text">Developed a MERN stack web application to calculate CGPA, streamlining academic progress tracking for students.</p>
-                        <a href="https://cgpa.world" class="btn btn-primary">View Project</a>
+                <h2 class="section-title">Projects</h2>
+                <div class="section-content">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">CGPA Calculator</h5>
+                            <p class="card-text">Developed a MERN stack web application to calculate CGPA, streamlining academic progress tracking for students.</p>
+                            <a href="https://cgpa.world" class="btn btn-primary">View Project</a>
+                        </div>
                     </div>
-                </div>
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">Mileage Calculator</h5>
-                        <p class="card-text">Built a Django-based app for calculating vehicle fuel efficiency and travel costs, providing a seamless user experience.</p>
-                        <a href="https://github.com/ChilukuriShashank/MileageCalculator" class="btn btn-primary">View Project</a>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Mileage Calculator</h5>
+                            <p class="card-text">Built a Django-based app for calculating vehicle fuel efficiency and travel costs, providing a seamless user experience.</p>
+                            <a href="https://github.com/ChilukuriShashank/MileageCalculator" class="btn btn-primary">View Project</a>
+                        </div>
                     </div>
-                </div>
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">Social Thrive</h5>
-                        <p class="card-text">Developing a social media platform using the MERN stack, enabling user connectivity and interaction in real-time.</p>
-                        <a href="https://github.com/ChilukuriShashank/Mern-Project" class="btn btn-primary">View Project</a>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Social Thrive</h5>
+                            <p class="card-text">Developing a social media platform using the MERN stack, enabling user connectivity and interaction in real-time.</p>
+                            <a href="https://github.com/ChilukuriShashank/Mern-Project" class="btn btn-primary">View Project</a>
+                        </div>
                     </div>
-                </div>
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">Trip Spender</h5>
-                        <p class="card-text">Developed a MERN stack application to calculate and manage trip expenses, facilitating cost-sharing among travelers.</p>
-                        <a href="https://github.com/Shashank-504/Trip-Spender-Frontend-" class="btn btn-primary">View Project</a>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Trip Spender</h5>
+                            <p class="card-text">Developed a MERN stack application to calculate and manage trip expenses, facilitating cost-sharing among travelers.</p>
+                            <a href="https://github.com/Shashank-504/Trip-Spender-Frontend-" class="btn btn-primary">View Project</a>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <section id="contact" class="d-none">
-                <h2>Contact Me</h2>
-                <p>Email: shashankvenkat06@gmail.com</p>
-                <p>Phone: +91-123-456-7890</p>
+                <h2 class="section-title">Contact Me</h2>
+                <div class="section-content text-center">
+                    <p>You can reach out to me via social media or email me at: <a href="mailto:shashank@example.com">shashank@example.com</a></p>
+                </div>
             </section>
         </main>
     </div>
 
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        function showSection(sectionId) {
-            const sections = document.querySelectorAll('main section');
-            sections.forEach(section => {
-                section.classList.add('d-none');
-            });
-            document.getElementById(sectionId).classList.remove('d-none');
-        }
-    </script>
 </body>
 </html>
