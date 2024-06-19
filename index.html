@@ -3,222 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shashank's Blog</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMqTG2G5o1A6JT69lYZF8UOpPiSHJeb7aBqd3Gm" crossorigin="anonymous">
+    <title>Shashank Chilukuri's Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
     <style>
         body {
-            background-image: url('https://img.freepik.com/free-vector/background-realistic-abstract-technology-particle_23-2148431735.jpg?size=626&ext=jpg&ga=GA1.1.2068409455.1718804680&semt=ais_user');
+            background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1');
             background-size: cover;
             background-attachment: fixed;
-            color: #ffffff;
-        }
-        header, nav, main {
-            background-color: rgba(0, 0, 0, 0.8);
-            padding: 20px;
-            border-radius: 15px;
-            margin-bottom: 20px;
-        }
-        h1, h2 {
-            color: #FFD700;
-        }
-        .nav-link {
-            color: #ffffff !important;
-        }
-        .nav-link:hover {
-            color: #FFD700 !important;
-        }
-        a {
-            color: #FFD700;
-        }
-        .card {
-            background-color: rgba(255, 255, 255, 0.1);
-            border: none;
-            color: #ffffff;
-            transition: transform 0.3s ease;
-        }
-        .card:hover {
-            transform: scale(1.05);
-        }
-        .card-body {
-            background-color: rgba(0, 0, 0, 0.5);
-            border-radius: 10px;
-            padding: 15px;
-        }
-        .card-title {
-            color: #FFD700;
-        }
-        .progress-bar {
-            background-color: #FFD700;
-        }
-        .social-links a {
-            margin-right: 10px;
-            color: #FFD700;
-            font-size: 24px;
-        }
-        .skills-card {
-            display: flex;
-            align-items: center;
-            margin-bottom: 15px;
+            color: white;
         }
         .skills-card img {
-            width: 40px;
-            height: 40px;
-            margin-right: 15px;
+            height: 50px;
+            width: auto;
         }
-        .profile-pic {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
+        .card {
+            background-color: rgba(0, 0, 0, 0.6);
+            border: none;
+            color: white;
         }
-        .section-title {
-            margin-bottom: 20px;
-            text-align: center;
+        .nav-link.active {
+            color: #FFD700;
+        }
+        .nav-link:hover {
+            color: #FFD700;
         }
         .section-content {
-            margin-bottom: 40px;
-        }
-        .d-none {
-            display: none;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <header class="text-center">
-            <h1>Chilukuri Shashank</h1>
-            <div class="social-links">
-                <a href="https://t.me/chilukuri_shashank"><i class="fab fa-telegram"></i></a>
-                <a href="https://www.instagram.com/shashank_chilukuri/"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/chilukuri-shashank-509546271/"><i class="fab fa-linkedin"></i></a>
-            </div>
+        <header class="my-4">
+            <h1>Shashank Chilukuri</h1>
+            <p class="lead">Aspiring Full Stack Developer</p>
         </header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item"><a class="nav-link" href="#home" onclick="navigate('home')">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about" onclick="navigate('about')">About Me</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#education" onclick="navigate('education')">Education & Certifications</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#skills" onclick="navigate('skills')">Skills</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects" onclick="navigate('projects')">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact" onclick="navigate('contact')">Contact Me</a></li>
-                    </ul>
-                </div>
-            </div>
+        <nav class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" onclick="navigate('home')">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="navigate('about')">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="navigate('skills')">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="navigate('projects')">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="navigate('contact')">Contact</a>
+            </li>
         </nav>
         <main>
             <section id="home">
-                <h2 class="section-title">Welcome</h2>
-                <div class="text-center section-content">
-                    <h3>I am Shashank</h3>
-                    <p>Welcome to my personal blog where I share my journey and projects in web development and computer science.</p>
+                <h2 class="section-title">Home</h2>
+                <div class="section-content">
+                    <p>Welcome to my portfolio website. Explore my projects, skills, and get in touch with me.</p>
                 </div>
             </section>
-
             <section id="about" class="d-none">
                 <h2 class="section-title">About Me</h2>
-                <div class="section-content text-center">
-                    <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
-                    <p>As a driven Computer Science Engineering student in my second year of study, I possess a keen interest and passion for web development. Through hands-on learning and exploration, I am honing my skills in various web development technologies and frameworks. Eager to delve deeper into creating dynamic and user-friendly websites, I am actively seeking opportunities to expand my knowledge and expertise in this field. With a strong foundation in computer science principles and a fervent dedication to mastering web development, I am poised to contribute effectively to innovative projects and initiatives in the digital realm.</p>
-                    <h3>Languages</h3>
-                    <ul>
-                        <li><strong>Telugu</strong> [Native]</li>
-                        <li><strong>English</strong> [Intermediate]</li>
-                        <li><strong>Hindi</strong> [Intermediate]</li>
-                    </ul>
-                    <h3>Hobbies</h3>
-                    <ul>
-                        <li>Watching movies</li>
-                        <li>Learning new facts</li>
-                        <li>Following the latest news updates</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section id="education" class="d-none">
-                <h2 class="section-title">Education & Certifications</h2>
                 <div class="section-content">
-                    <h3>Education</h3>
-                    <ul>
-                        <li>2022--2026: KL University, Bachelor of Technology in Computer Science, Hyderabad, Telangana (CGPA: 9.26)</li>
-                        <li>2020--2022: Narayana Junior College, Intermediate (MPC), Hyderabad, Telangana (Marks: 956 out of 1000)</li>
-                        <li>2016--2020: Montessori Residential High School, High School, Alampur, Telangana (CGPA: 10)</li>
-                    </ul>
-                    <h3>Certifications</h3>
-                    <ul>
-                        <li>AWS Certified Cloud Practitioner Badge: <a href="https://www.credly.com/go/eX5756G5">Link</a></li>
-                        <li>MongoDB Developer Path Certificate - Certification ID: <a href="https://learn.mongodb.com/c/Aw6Jt0xjS0C7dRxdhqXV_g">MDBd9r7szl8kj</a></li>
-                        <li>Participation Certificate for Hackathon - Certification ID: ImpacTech03514</li>
-                        <li>Postman API Fundamentals Student Expert Badge: <a href="https://badgr.com/public/assertions/wBWp7EP_SBa1KSVAlCzJYw?identity__email=shashankvenkat06@gmail.com">Link</a></li>
-                    </ul>
+                    <p>Hi, I'm Shashank Chilukuri, an aspiring full-stack developer with a passion for creating dynamic and responsive web applications.</p>
                 </div>
             </section>
-
             <section id="skills" class="d-none">
                 <h2 class="section-title">Skills</h2>
                 <div class="section-content">
                     <div class="row">
+                        <!-- Languages -->
                         <div class="col-md-4">
-                            <div class="card skills-card">
-                                <img src="java-logo.png" alt="Java">
-                                <div class="card-body">
-                                    <h5 class="card-title">Java</h5>
-                                    <p class="card-text">Intermediate</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card skills-card">
-                                <img src="c-logo.png" alt="C">
+                            <div class="card skills-card" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Intermediate level">
+                                <img src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white" alt="C">
                                 <div class="card-body">
                                     <h5 class="card-title">C</h5>
-                                    <p class="card-text">Intermediate</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card skills-card">
-                                <img src="python-logo.png" alt="Python">
+                            <div class="card skills-card" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Intermediate level">
+                                <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python">
                                 <div class="card-body">
                                     <h5 class="card-title">Python</h5>
-                                    <p class="card-text">Intermediate</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card skills-card">
-                                <img src="html-logo.png" alt="HTML">
+                            <div class="card skills-card" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Intermediate level">
+                                <img src="https://img.shields.io/badge/html-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML">
                                 <div class="card-body">
                                     <h5 class="card-title">HTML</h5>
-                                    <p class="card-text">Intermediate</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card skills-card">
-                                <img src="css-logo.png" alt="CSS">
+                            <div class="card skills-card" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Intermediate level">
+                                <img src="https://img.shields.io/badge/css-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS">
                                 <div class="card-body">
                                     <h5 class="card-title">CSS</h5>
-                                    <p class="card-text">Intermediate</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card skills-card">
-                                <img src="javascript-logo.png" alt="JavaScript">
+                            <div class="card skills-card" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Intermediate level">
+                                <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript">
                                 <div class="card-body">
                                     <h5 class="card-title">JavaScript</h5>
-                                    <p class="card-text">Intermediate</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="card skills-card">
-                                <img src="django-logo.png" alt="Django">
+                                <img src="https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white" alt="Django">
                                 <div class="card-body">
                                     <h5 class="card-title">Django</h5>
                                 </div>
@@ -226,7 +123,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="card skills-card">
-                                <img src="flask-logo.png" alt="Flask">
+                                <img src="https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white" alt="Flask">
                                 <div class="card-body">
                                     <h5 class="card-title">Flask</h5>
                                 </div>
@@ -234,7 +131,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="card skills-card">
-                                <img src="react-logo.png" alt="React.js">
+                                <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React.js">
                                 <div class="card-body">
                                     <h5 class="card-title">React.js</h5>
                                 </div>
@@ -242,7 +139,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="card skills-card">
-                                <img src="nodejs-logo.png" alt="Node.js">
+                                <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js">
                                 <div class="card-body">
                                     <h5 class="card-title">Node.js</h5>
                                 </div>
@@ -250,7 +147,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="card skills-card">
-                                <img src="express-logo.png" alt="Express.js">
+                                <img src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB" alt="Express.js">
                                 <div class="card-body">
                                     <h5 class="card-title">Express.js</h5>
                                 </div>
@@ -258,7 +155,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="card skills-card">
-                                <img src="mysql-logo.png" alt="MySQL">
+                                <img src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
                                 <div class="card-body">
                                     <h5 class="card-title">MySQL</h5>
                                 </div>
@@ -266,7 +163,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="card skills-card">
-                                <img src="postgresql-logo.png" alt="PostgreSQL">
+                                <img src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
                                 <div class="card-body">
                                     <h5 class="card-title">PostgreSQL</h5>
                                 </div>
@@ -274,7 +171,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="card skills-card">
-                                <img src="mongodb-logo.png" alt="MongoDB">
+                                <img src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB">
                                 <div class="card-body">
                                     <h5 class="card-title">MongoDB</h5>
                                 </div>
@@ -283,59 +180,33 @@
                     </div>
                 </div>
             </section>
-
             <section id="projects" class="d-none">
                 <h2 class="section-title">Projects</h2>
                 <div class="section-content">
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <h5 class="card-title">CGPA Calculator</h5>
-                            <p class="card-text">Developed a MERN stack web application to calculate CGPA, streamlining academic progress tracking for students.</p>
-                            <a href="https://cgpa.world" class="btn btn-primary">View Project</a>
-                        </div>
-                    </div>
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <h5 class="card-title">Mileage Calculator</h5>
-                            <p class="card-text">Built a Django-based app for calculating vehicle fuel efficiency and travel costs, providing a seamless user experience.</p>
-                            <a href="https://github.com/ChilukuriShashank/MileageCalculator" class="btn btn-primary">View Project</a>
-                        </div>
-                    </div>
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <h5 class="card-title">Social Thrive</h5>
-                            <p class="card-text">Developing a social media platform using the MERN stack, enabling user connectivity and interaction in real-time.</p>
-                            <a href="https://github.com/ChilukuriShashank/Mern-Project" class="btn btn-primary">View Project</a>
-                        </div>
-                    </div>
-                    <div class="card mb-3">
-                        <div class="card-body">
-                            <h5 class="card-title">Trip Spender</h5>
-                            <p class="card-text">Developed a MERN stack application to calculate and manage trip expenses, facilitating cost-sharing among travelers.</p>
-                            <a href="https://github.com/Shashank-504/Trip-Spender-Frontend-" class="btn btn-primary">View Project</a>
-                        </div>
-                    </div>
+                    <p>Here are some of the projects I've worked on...</p>
                 </div>
             </section>
-
             <section id="contact" class="d-none">
-                <h2 class="section-title">Contact Me</h2>
-                <div class="section-content text-center">
-                    <p>You can reach out to me via social media or email me at: <a href="mailto:shashank@example.com">shashank@example.com</a></p>
+                <h2 class="section-title">Contact</h2>
+                <div class="section-content">
+                    <p>You can reach me at my email: shashank@example.com</p>
                 </div>
             </section>
         </main>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
     <script>
-        function navigate(sectionId) {
-            const sections = document.querySelectorAll('main section');
-            sections.forEach(section => {
-                section.classList.add('d-none');
-            });
-            document.getElementById(sectionId).classList.remove('d-none');
+        function navigate(section) {
+            document.querySelectorAll('main section').forEach(s => s.classList.add('d-none'));
+            document.getElementById(section).classList.remove('d-none');
         }
+        document.addEventListener('DOMContentLoaded', function () {
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+                return new bootstrap.Popover(popoverTriggerEl)
+            })
+        });
     </script>
 </body>
 </html>
